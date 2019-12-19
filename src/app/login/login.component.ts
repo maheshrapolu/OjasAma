@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+export interface Food {
+  value: string;
+  viewValue: string;
+}
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,5 +14,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  foods: Food[] = [
+    { value: 'steak-0', viewValue: 'Steak' },
+    { value: 'pizza-1', viewValue: 'Pizza' },
+    { value: 'tacos-2', viewValue: 'Tacos' }
+  ];
 }
