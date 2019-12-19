@@ -33,7 +33,8 @@ import { LoginComponent } from './login/login.component';
     MatInputModule ,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
