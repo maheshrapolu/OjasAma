@@ -22,6 +22,7 @@ import { EmployeesComponent } from './dashboard/admin/employees/employees.compon
 import { AssignmentClinetLinkComponent } from './dashboard/admin/assignment-clinet-link/assignment-clinet-link.component';
 import { AssignmentEmployeeLinkComponent } from './dashboard/admin/assignment-employee-link/assignment-employee-link.component';
 import { ServerNotFoundComponent } from './server-not-found/server-not-found.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ServerNotFoundComponent } from './server-not-found/server-not-found.com
     MatCardModule,
     MatInputModule,
     MatButtonModule,
+    NgxPaginationModule
     
   ],
   providers: [],
