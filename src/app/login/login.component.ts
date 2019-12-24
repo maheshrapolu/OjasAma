@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 export interface Food {
   value: string;
   viewValue: string;
@@ -10,7 +11,7 @@ export interface Food {
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor( private myRoute: Router) { }
 
   ngOnInit() {
   }
@@ -19,4 +20,8 @@ export class LoginComponent implements OnInit {
     { value: 'pizza-1', viewValue: 'Pizza' },
     { value: 'tacos-2', viewValue: 'Tacos' }
   ];
+  ngSumbit(){
+    this.myRoute.navigate(["/dashboard"]);
+
+  }
 }

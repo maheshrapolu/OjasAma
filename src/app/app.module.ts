@@ -11,9 +11,17 @@ import {MatInputModule} from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 import { ReportsComponent } from './dashboard/reports/reports.component';
-import { AllEmployeesComponent } from './dashboard/all-employees/all-employees.component';
+import { AllEmployeesComponent } from './dashboard/reports/all-employees/all-employees.component';
 import { AdminComponent } from './dashboard/admin/admin.component';
 import { LoginComponent } from './login/login.component';
+import { SlideNavComponent } from './dashboard/slide-nav/slide-nav.component';
+import { HeaderBarComponent } from './dashboard/header-bar/header-bar.component';
+import { ClientsComponent } from './dashboard/admin/clients/clients.component';
+import { AssignmentsComponent } from './dashboard/admin/assignments/assignments.component';
+import { EmployeesComponent } from './dashboard/admin/employees/employees.component';
+import { AssignmentClinetLinkComponent } from './dashboard/admin/assignment-clinet-link/assignment-clinet-link.component';
+import { AssignmentEmployeeLinkComponent } from './dashboard/admin/assignment-employee-link/assignment-employee-link.component';
+import { ServerNotFoundComponent } from './server-not-found/server-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +30,15 @@ import { LoginComponent } from './login/login.component';
     ReportsComponent,
     AllEmployeesComponent,
     AdminComponent,
-    LoginComponent
+    LoginComponent,
+    SlideNavComponent,
+    HeaderBarComponent,
+    ClientsComponent,
+    AssignmentsComponent,
+    EmployeesComponent,
+    AssignmentClinetLinkComponent,
+    AssignmentEmployeeLinkComponent,
+    ServerNotFoundComponent
   ],
   imports: [
     BrowserModule,

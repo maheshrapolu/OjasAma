@@ -11,5 +11,15 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
+  toggled = false;
+  slideOpen: any = false;
+
+  onToggle(){
+    
+  }
+    changeSlide(): void {
+      this.toggled = !this.toggled;
+      this.slideOpen = !this.slideOpen;
+  }
 
 }
